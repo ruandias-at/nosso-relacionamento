@@ -545,8 +545,9 @@ header::before {
     font-size: 1.2rem;
     min-width: 20px;
 }
-
+    
 #volumeSlider {
+    appearance: none;
     flex: 1;
     height: 6px;
     -webkit-appearance: none;
