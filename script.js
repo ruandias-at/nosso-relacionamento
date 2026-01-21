@@ -1,5 +1,5 @@
 // Data de início do relacionamento
-const dataInicio = new Date('2023-12-27T14:00:00');
+const dataInicio = new Date('2023-12-27T00:00:00');
 
 // Elementos do contador
 const anosEl = document.getElementById('anos');

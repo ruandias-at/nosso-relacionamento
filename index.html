@@ -17,6 +17,27 @@
             <p class="subtitulo">Com Amor, Ruan</p>
         </header>
 
+        
+        <!-- Controles de Áudio -->
+        <div class="audio-controls">
+            <button id="playBtn" class="audio-btn">
+                <i class="fas fa-play"></i> Tocar Música
+            </button>
+            <button id="pauseBtn" class="audio-btn">
+                <i class="fas fa-pause"></i> Pausar
+            </button>
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" id="volumeSlider" min="0" max="100" value="50">
+            </div>
+        </div>
+
+        <!-- Áudio -->
+        <audio id="musica" loop>
+            <source src="assets/audio/musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
         <!-- Contador de Tempo -->
         <section class="contador-section">
             <div class="contador-container">
@@ -47,7 +68,7 @@
                         <p>Segundos</p>
                     </div>
                 </div>
-                <p class="data-inicio">27/12/2023 - &infin;</p>
+                <p class="data-inicio">27/12/2023 - <strong style="font-size: 1.3em;">&infin;</strong></p>
             </div>
         </section>
 
@@ -59,7 +80,7 @@
                     <img src="assets/images/foto1.jpg" alt="Nossa foto 1" loading="lazy">
                 </div>
                 <div class="foto-item">
-                    <img src="assets/images/foto2.jpg" alt="Nossa foto 2" loading="lazy">
+                    <img src="assets/images/foto2.png" alt="Nossa foto 2" loading="lazy">
                 </div>
                 <div class="foto-item">
                     <img src="assets/images/foto3.jpg" alt="Nossa foto 3" loading="lazy">
@@ -73,6 +94,24 @@
                 <div class="foto-item">
                     <img src="assets/images/foto6.jpg" alt="Nossa foto 6" loading="lazy">
                 </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto7.jpg" alt="Nossa foto 7" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto8.jpg" alt="Nossa foto 8" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto9.jpg" alt="Nossa foto 9" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto10.jpg" alt="Nossa foto 10" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto11.jpg" alt="Nossa foto 11" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto12.jpg" alt="Nossa foto 12" loading="lazy">
+                </div>    
             </div>
         </section>
 
@@ -89,32 +128,12 @@
             </div>
         </section>
 
-        <!-- Controles de Áudio -->
-        <div class="audio-controls">
-            <button id="playBtn" class="audio-btn">
-                <i class="fas fa-play"></i> Tocar Música
-            </button>
-            <button id="pauseBtn" class="audio-btn">
-                <i class="fas fa-pause"></i> Pausar
-            </button>
-            <div class="volume-control">
-                <i class="fas fa-volume-up"></i>
-                <input type="range" id="volumeSlider" min="0" max="100" value="50">
-            </div>
-        </div>
-
         <!-- Rodapé -->
         <footer>
             <p>Feito com muito amor<i class="fas fa-heart" style="color: #e74c3c;"></i> por Ruan</p>
             <p class="data-atualizacao">Última atualização: <span id="data-atual"></span></p>
         </footer>
     </div>
-
-    <!-- Áudio -->
-    <audio id="musica" loop>
-        <source src="assets/audio/musica.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
 
     <script src="script.js"></script>
 </body>
