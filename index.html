@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nós</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1 class="titulo-principal">Nosso Amor</h1>
+            <p class="subtitulo">Com Amor, Ruan</p>
+        </header>
+
+        <!-- Contador de Tempo -->
+        <section class="contador-section">
+            <div class="contador-container">
+                <h2><i class="fas fa-heart"></i> Tempo Juntos</h2>
+                <div class="contador">
+                    <div class="tempo-item">
+                        <span id="anos">0</span>
+                        <p>Anos</p>
+                    </div>
+                    <div class="tempo-item">
+                        <span id="meses">0</span>
+                        <p>Meses</p>
+                    </div>
+                    <div class="tempo-item">
+                        <span id="dias">0</span>
+                        <p>Dias</p>
+                    </div>
+                    <div class="tempo-item">
+                        <span id="horas">0</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="tempo-item">
+                        <span id="minutos">0</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="tempo-item">
+                        <span id="segundos">0</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+                <p class="data-inicio">Desde 27/12/2023 às 14:00</p>
+            </div>
+        </section>
+
+        <!-- Galeria de Fotos -->
+        <section class="galeria-section">
+            <h2><i class="fas fa-images"></i> Nossas Memórias</h2>
+            <div class="galeria">
+                <div class="foto-item">
+                    <img src="assets/images/foto1.jpg" alt="Nossa foto 1" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto2.jpg" alt="Nossa foto 2" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto3.jpg" alt="Nossa foto 3" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto4.jpg" alt="Nossa foto 4" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto5.jpg" alt="Nossa foto 5" loading="lazy">
+                </div>
+                <div class="foto-item">
+                    <img src="assets/images/foto6.jpg" alt="Nossa foto 6" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensagem -->
+        <section class="mensagem-section">
+            <h2><i class="fas fa-heart"></i> Minha Mensagem para Você</h2>
+            <div class="mensagem-container">
+                <div class="mensagem-content">
+                    <p id="mensagem-texto">
+                        Eu sei que essas 6 fotos são poucas para representar nossa história juntos, nossa história que está apenas começando. Uma das poucas certezas que eu tenho na vida e que quero passar até o último dia dela ao seu lado. Eu te amo muito, obrigado pela paciência de sempre e por ser essa pessoa ÚNICA. Você é a melhor namorada do mundo, te amo!
+                    </p>
+                    <div class="assinatura">Ruan</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controles de Áudio -->
+        <div class="audio-controls">
+            <button id="playBtn" class="audio-btn">
+                <i class="fas fa-play"></i> Tocar Música
+            </button>
+            <button id="pauseBtn" class="audio-btn">
+                <i class="fas fa-pause"></i> Pausar
+            </button>
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" id="volumeSlider" min="0" max="100" value="50">
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>Feito com muito amor<i class="fas fa-heart" style="color: #e74c3c;"></i> por Ruan</p>
+            <p class="data-atualizacao">Última atualização: <span id="data-atual"></span></p>
+        </footer>
+    </div>
+
+    <!-- Áudio -->
+    <audio id="musica" loop>
+        <source src="assets/audio/musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
